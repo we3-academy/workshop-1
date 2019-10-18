@@ -2,7 +2,7 @@
   --bg: #fdfdfd;
   --meta: #888;
   --accent: #3178cd;
-  --text: black;
+  --text: #5b5b5b;
   --base: 1.5rem;
 }
 
@@ -14,6 +14,10 @@
 
 * {
   box-sizing: border-box;
+}
+
+a {
+  font-size: 1.3em;
 }
 
 body,
@@ -37,7 +41,8 @@ html {
 
 #slide {
   display: flex;
-  overflow: hidden;
+  overflow-y: scroll;
+  
   justify-content: center;
   align-items: center;
 
@@ -57,8 +62,7 @@ html {
 
 a {
   color: var(--text);
-
-  text-decoration-skip-ink: auto;
+  text-decoration: none;
 }
 
 blockquote {
@@ -102,7 +106,7 @@ pre {
   font-size: 70%;
 
   display: inline-block;
-  overflow-x: scroll;
+  overflow-x: none;
 
   margin: 2rem 0;
 
@@ -113,7 +117,8 @@ pre {
 
 code {
   font-family: menlo, monospace;
-  font-size: 90%;
+  font-size: 110%;
+  font-weight: bold;
 }
 
 a:hover {
